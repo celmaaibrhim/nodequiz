@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const port = 5000;
 
+
 app.set('view engine', 'ejs');
-app.use
+
+app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (req,res)=>{

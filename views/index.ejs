@@ -1,12 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital@1&family=Ranchers&family=Satisfy&family=Syne+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"></script>
+    <title>Quiz Board</title>
 </head>
-<body>
-    <h1>Hello World</h1>
-</body>
-</html>
+<nav class="navbar">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Welcome Ladies! 🥳</span>
+    </div>
+</nav>
+<body class="bg-dark">
+<div class="board-game text-center">
+    <h1 class="display-2 heading">Quiz Board</h1>
+
+    <!-- Row 1 -->
+    <div class="row">
+        <!--SEERAH ROW 1-->
+
+        <div class="col-md">
+            <h1 class="display-5 category">Seerah</h1>
+
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="How many years did the Prophet صلى الله عليه وسلم live in Makkah and Madinah for?">1</button>
+            <!-- Answer: 53 years in Makkah, 10 years in Madinah 1 -->
+
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="What was the first stage of the revelation?">2</button>
+            <!-- Answer: True dreams (6 months)-->
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="Who were the first people to embrace Islam?">3</button>
+            <!---Answer: The first woman was Khadijah (R.A) (The Prophet’s صلى الله عليه وسلم wife), 
+            The first slave was Zaid Ibn Haaritha (R.A) (The Prophet’s صلى الله عليه وسلم freed slave), 
+            The first child was Ali Ibn Abi Talib (R.A) (The Prophet’s صلى الله عليه وسلم cousin,
+            The first man was Abu Bakr (R.A) (The Prophet’s صلى الله عليه وسلم best friend)-->
+        </div>
+
+        <!--QURAN ROW 1-->
+
+        <div class="col-md">
+            <h1 class="display-5 category">Quran</h1>
+
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="How many Ambiyaa are mentioned in the Qur’aan?">1</button>
+            <!--Answer: 25 -->
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="Which two Surah’s of the Qur’an are named after insects?">2</button>
+            <!--Answer: 1) Al-Naml (the Ant), 2) Al-Nahl (the Honey Bee) 3)Ankaboot -->
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="How many Makki Surahs are there in Qur'an?">3</button>
+            <!---Answer: 93-->
+        </div>
+
+        <!--GENERAL KNOWLEDGE ROW 1-->
+
+        <div class="col-md">
+            <h1 class="display-5 category">General Knowledge</h1>
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="Which chess piece is of the lowest theoretical value?<br>A)Knight <br> B)Castle <br> C)Bishop <br> D)Pawn">1</button>
+            <!--Answer:Pawn -->
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="What number is represented by the letters XIX in Roman numerals?<br>A)16 <br> B)11 <br> C)21 <br> D)19">2</button>
+            <!--Answer: 21 X = 10, IX = 9, 10 + 9 = 19-->
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="Name the title of the 1818 novel by Mary Wollstonecraft Shelley.<br>A)Dracula <br> B)Frankenstein <br> C)The Mummy <br> D)Spiderman">3</button>
+            <!---Answer:Frankenstein -->
+        </div>
+    </div>
+    <!-- Row 2 -->
+
+    <div class="row">
+        <!--SEERAH ROW 2-->
+
+        <div class="col-md">
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="What happened in the year of sorrow (aam ul huzn)?">4</button>
+            <!---Answer: Death of Abu Taalib and Khadijah-->
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="Name 5 of the famous battles the Prophet صلى الله عليه وسلم participated in?">5</button>
+            <!---Answer:Badr (2 a.h), Uhud (3 a.h), Ahzaab/Khandaq (5 a.h), Hunain (8 a.h) & the conquest of Makkah (8 a.h)
+    -->
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="How many times did the Prophet صلى الله عليه وسلم perform Hajj and Umrah?">6</button>
+            <!--Answer: He performed 4 Umra (6, 7, 8 & 10 a.h) and 1 Hajj (10 a.h)
+    -->
+        </div>
+
+        <!--QURAN ROW 2-->
+
+        <div class="col-md">
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="How many Surahs of the Qur'aan start with the name of a fruit?">4</button>
+            <!--Answer:At-teen-->
+
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="Which country's name is mentioned in the Qur'an?">5</button>
+            <!---Answer: Egypt (Misr)-->
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id=" Allah praised and used the Iman of two women as a model for other believers. Who were they?">6</button>
+            <!--Answer: Wife of Firawn and Maryam R.A-->
+        </div>
+
+        <!--GENERAL KNOWLEDGE ROW 2-->
+
+        <div class="col-md">
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="What liquid measure is equal to 1.76 imperial pints?<br>A)Quart <br> B)Bushel <br> C)Gallon <br> D)Litre">4</button>
+            <!--Answer: Litre-->
+
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="Which non-metallic element has the chemical symbol S?<br>A)Sulphur <br> B)Silicon <br> C)Sodium <br> D)Selenium ">5</button>
+            <!--Answer: Sulphur-->
+
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="In which African country is Timbuktu?<br>A)Chad <br> B)Mali <br> C)Nigeria <br> D)Algeria ">6</button>
+            <!--Answer: Mali-->
+
+        </div>
+
+    </div>
+
+    <!-- Row 3 -->
+
+    <div class="row">
+        <!--SEERAH ROW 3-->
+
+        <div class="col-md">
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="What was the seal of Prophethood?">7</button>
+            <!--Answer: It was a raised piece of flesh on the back of the Prophet صلى الله عليه وسلم 
+    in between the shoulder blades, closer to the right side. 
+    This was a sign indicated in previous scriptures as a proof that he is the last messenger. 
+    Many monks and Rabbis accepted Islam after reading about this in their scriptures and witnessing it with their own eyes-->
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="What was the full name of the Prophet صلى الله عليه وسلم maternal grandfather?">8</button>
+            <!--Answer:Wahab ibn Abd-Manaf ibn Zuhra ibn Kilaab -->
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="Name one Christian monk who saw the Prophet  صلى الله عليه وسلم  and recognised him">9</button>
+            <!--Answer:Buhaira, Nastoorah & Waraqah ibn Nawfal -->
+        </div>
+
+        <!--QURAN ROW 3-->
+
+        <div class="col-md">
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="6. Which creature spoke in the Qur'an?">7</button>
+            <!--Answer:  An-naml (the Ant)-->
+
+
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="Who were the first builders of the Ka`bah? ">8</button>
+            <!---Answer: Ibrahim and Ismail peace be upon them-->
+
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="Who was the guardian of Maryam Alaihas Salaam?">9</button>
+            <!--Answer:Zakariyyah Alaihis Salaam-->
+        </div>
+
+        <!--GENERAL KNOWLEDGE ROW 3-->
+
+        <div class="col-md">
+            <button class="btn btn-lg btn-danger" onclick="showQuestion(this.id)"
+                id="Dracula suffers from staurophobia, the fear of ______?<br>A)Garlic <br> B)Crucifixes <br> C)Daylight <br> D)Mirrors">7</button>
+            <!--Answer: Crucifixes-->
+
+            <button class="btn btn-lg btn-info" onclick="showQuestion(this.id)"
+                id="Name the marine creature of the genus hippocampus?<br>A)Sea horse <br> B)Crocodile <br> C)Mantee <br> D)Hippocampus">8</button>
+            <!--Answer: Sea horse-->
+
+            <button class="btn btn-lg btn-warning" onclick="showQuestion(this.id)"
+                id="What was the unit of currency in Poland at the time of the second World War?<br>A)Lek <br> B)Ruble <br> C)Zloty <br> D)Schilling">9</button>
+            <!--Answer: Zloty-->
+
+        </div>
+    </div>
+
+    <div id="showquestion">
+        Pick A Question
+    </div>
+
+
+
+    <div class="scores">
+        <div class="row">
+            <div class="col-sm">
+                <span>Ramla</span>
+                <input type="number" name="" value="0">
+            </div>
+            <div class="col-sm">
+                <span>Hafsa</span>
+                <input type="number" name="" value="0">
+            </div>
+            <div class="col-sm">
+                <span>Najad</span>
+                <input type="number" name="" value="0">
+            </div>
+            <div class="col-sm">
+                <span>Nasra</span>
+                <input type="number" name="" value="0">
+            </div>
+            <div class="col-sm">
+                <span>Nimah</span>
+                <input type="number" name="" value="0">
+            </div>
+
+        </div>
+    </div>
+    <footer id="footer">
+        <p>© Copyright 2021 Celmaa's Games Night </p>
+
+    </footer>
+    </body>
+    <script>
+
+    function showQuestion(clicked_id) {
+
+        document.getElementById('showquestion').innerHTML = clicked_id
+
+        const clickedButton = document.getElementById(clicked_id)
+        clickedButton.classList.add('btn-clicked')
+    }
+
+
+    </script>
+    </html>

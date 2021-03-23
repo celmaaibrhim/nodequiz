@@ -1,0 +1,88 @@
+*{ 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.navbar{
+background-color: rgb(206, 164, 206);
+font-family: 'Satisfy', cursive;
+}
+.navbar-brand{
+  font-size: 30px !important;
+}
+
+.heading{
+font-family: 'Syne Mono', monospace;
+color: white;
+text-decoration: underline;
+}
+
+
+
+#showquestion{
+  width: 70%;
+  padding: 50px 0;
+  text-align: center;
+  background-color:rgb(206, 164, 206);
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,-5%);
+  letter-spacing: 2px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+#showquestion::after{
+display: block;
+height: 2px;
+background-color: tomato;
+content: " ";
+width: 200px;
+margin: 0 auto;
+align-items: center;
+
+}
+
+.category{
+  font-family: 'Courgette', cursive;
+  color: white;
+  margin-bottom: 20px !important;
+  margin-top: 50px !important;
+  padding: 5px;
+
+}
+
+.btn{
+  width: 10vw !important;
+  height: 70px !important;
+  margin-bottom: 10px !important;
+  color: white !important;
+}
+
+.btn-clicked{
+  text-decoration: line-through !important;
+  background-color: green !important;
+
+}
+
+
+
+#footer{
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+
+}
+
+
+span{
+  color: white;
+}
+
+.scores{
+margin: 40px;
+
+}

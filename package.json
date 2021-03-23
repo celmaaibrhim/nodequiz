@@ -1,6 +1,5 @@
 {
   "_from": "json",
-  "_id": "json@10.0.0",
   "_inBundle": false,
   "_integrity": "sha512-iK7tAZtpoghibjdB1ncCWykeBMmke3JThUe+rnkD4qkZaglOIQ70Pw7r5UJ4lyUT+7gnw7ehmmLUHDuhqzQD+g==",
   "_location": "/json",
@@ -23,18 +22,13 @@
   "_shasum": "c49a939d4abc7067cc225419d5dd17ab7bf2f66c",
   "_spec": "json",
   "_where": "/Users/Amatirahman/Desktop/Node",
-  "author": {
-    "name": "Trent Mick",
-    "email": "trentm@gmail.com",
-    "url": "http://trentm.com"
-  },
+  "author": "Trent Mick <trentm@gmail.com> (http://trentm.com)",
   "bin": {
     "json": "lib/json.js"
   },
   "bugs": {
     "url": "https://github.com/trentm/json/issues"
   },
-  "bundleDependencies": false,
   "deprecated": false,
   "description": "a 'json' command for massaging and processing JSON on the command line",
   "devDependencies": {
@@ -66,7 +60,14 @@
     "url": "git://github.com/trentm/json.git"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "nodemon index.js"
   },
-  "version": "10.0.0"
+  "version": "10.0.0",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "google-font-installer": "^1.2.0"
+  },
+  "license": "ISC"
 }
